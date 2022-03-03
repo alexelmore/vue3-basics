@@ -65,7 +65,11 @@
       <div class="box" @mousemove="handleMousemove">position: {{x}}-{{y}}</div>
       <div>
         <ul>
-          <li v-for="book in books" :class="{fav:book.isFav}">
+          <li
+            @click="toogleFav(book)"
+            v-for="book in filteredBooks"
+            :class="{fav:book.isFav}"
+          >
             <img :src="book.img" :alt="book.title" />
             <h3>{{book.title}}</h3>
           </li>
