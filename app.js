@@ -10,6 +10,17 @@ const app = Vue.createApp({
       showAge: true,
       x: 0,
       y: 0,
+      books: [
+        {
+          title: "Book 1",
+        },
+        {
+          title: "Book 2",
+        },
+        {
+          title: "Book 3",
+        },
+      ],
     };
   },
   methods: {
