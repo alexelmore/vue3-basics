@@ -6,11 +6,16 @@ const app = Vue.createApp({
       title: "New Book Title",
       author: "Book Author",
       age: 45,
+      isMarried: true,
+      showAge: true,
     };
   },
   methods: {
     changeAuthor(title) {
       this.author = title;
+    },
+    toggleShowAge() {
+      this.showAge = !this.showAge;
     },
   },
 });
