@@ -5,8 +5,13 @@ const app = Vue.createApp({
     return {
       title: "New Book Title",
       author: "Book Author",
-      age: "Author Age",
+      age: 45,
     };
+  },
+  methods: {
+    changeAuthor(title) {
+      this.author = title;
+    },
   },
 });
 
