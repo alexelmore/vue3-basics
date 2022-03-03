@@ -15,14 +15,17 @@ const app = Vue.createApp({
         {
           title: "Book 1",
           img: "/assets/one.png",
+          isFav: true,
         },
         {
           title: "Book 2",
           img: "/assets/two.png",
+          isFav: false,
         },
         {
           title: "Book 3",
           img: "/assets/three.png",
+          isFav: true,
         },
       ],
     };
