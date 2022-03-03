@@ -3,6 +3,7 @@ const app = Vue.createApp({
   // Setup for template for rendering to the DOM
   data() {
     return {
+      url: "https://www.google.com/",
       title: "New Book Title",
       author: "Book Author",
       age: 45,
@@ -13,12 +14,15 @@ const app = Vue.createApp({
       books: [
         {
           title: "Book 1",
+          img: "/assets/one.png",
         },
         {
           title: "Book 2",
+          img: "/assets/two.png",
         },
         {
           title: "Book 3",
+          img: "/assets/three.png",
         },
       ],
     };

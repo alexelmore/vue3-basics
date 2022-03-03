@@ -17,6 +17,9 @@
   </head>
   <body>
     <div id="app">
+      <!-- Attribute Binding -->
+      <a :href="url">Google</a>
+
       <p>{{title}}</p>
       <p>{{author}}</p>
       <p v-if="showAge">{{age}}</p>
@@ -42,6 +45,7 @@
       <div>
         <ul>
           <li v-for="book in books">
+            <img :src="book.img" :alt="book.title" />
             <h3>{{book.title}}</h3>
           </li>
         </ul>
