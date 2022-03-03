@@ -8,6 +8,8 @@ const app = Vue.createApp({
       age: 45,
       isMarried: true,
       showAge: true,
+      x: 0,
+      y: 0,
     };
   },
   methods: {
@@ -16,6 +18,16 @@ const app = Vue.createApp({
     },
     toggleShowAge() {
       this.showAge = !this.showAge;
+    },
+    handleEvent(e, custom) {
+      console.log(e);
+      if (custom) {
+        console.log(custom);
+      }
+    },
+    handleMousemove(e) {
+      this.x = e.offsetX;
+      this.y = e.offsetY;
     },
   },
 });
